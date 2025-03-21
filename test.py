@@ -33,6 +33,8 @@ def handle_response(text:str)->str:
         return "I am great. how about you"
     if "i love programming" in processed:
         return "Thats great,what do you love about programming"
+    if any(word in processed for word in ["goggle","swim cap","flippers","costume","speedo"]):
+        return "All swimming materials are availabe will you like to place an order"
     return "i dont understand you"
 
 
