@@ -27,7 +27,7 @@ async def custom(update: Update,context: ContextTypes.DEFAULT_TYPE):
 def handle_response(text:str)->str:
     processed:str=text.lower()
 
-    if any(word in processed for word in ["Hello","hi","habari","yoo","hey"]):
+    if any(word in processed for word in ["Hello","hi","habari","yoo","hey","jambo","holla"]):
         return "hi, how may i assist today BITCH"
     if "how are you doing" in processed:
         return "I am great. how about you"
